@@ -1,26 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
-	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"id": "stepitup",
+	"version": "1.0.0",
+	"name": "Step It Up",
+	"description": "Update of IsLocal's BTA port of step it up to BTA 8.0.1",
 	"authors": [
-		"Turnip Labs"
+		"Turnip Labs",
+		"IsLocal",
+		"dotBuzz"
 	],
 	"contact": {
 		"homepage": "",
 		"sources": ""
 	},
 	"icon": "icon.png",
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"local.stepitup.StepItUp"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"stepItUp.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
