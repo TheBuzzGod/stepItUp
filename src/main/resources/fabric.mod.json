@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "stepitup",
 	"version": "1.0.0",
-	"name": "Step It Up",
+	"name": "Step It Up (Continued)",
 	"description": "Update of IsLocal's BTA port of step it up to BTA 8.0.1",
 	"authors": [
 		"Turnip Labs",
