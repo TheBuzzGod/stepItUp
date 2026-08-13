@@ -27,6 +27,17 @@ public abstract class EntityMixin {
 			return;
 		}
 
+		if (Minecraft.getMinecraft().currentScreen == null) {
+			if (StepItUpGameSettingsHolder.TOGGLE.isPressed()) {
+				if (!StepItUpGameSettingsHolder.stepitupKeyPressed) {
+					StepItUpGameSettingsHolder.stepitupKeyPressed = true;
+					StepItUpGameSettingsHolder.ENABLED.set(!StepItUpGameSettingsHolder.ENABLED.value);
+				}
+			} else  {
+				StepItUpGameSettingsHolder.stepitupKeyPressed = false;
+			}
+		}
+
 		if (isSneaking() || !StepItUpGameSettingsHolder.ENABLED.value) {
 			footSize = 0.5F;
 		} else {

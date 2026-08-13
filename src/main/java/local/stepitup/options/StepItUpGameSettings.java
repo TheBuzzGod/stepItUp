@@ -3,6 +3,7 @@ package local.stepitup.options;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.options.components.BooleanOptionComponent;
+import net.minecraft.client.gui.options.components.KeyBindingComponent;
 import net.minecraft.client.gui.options.data.OptionsPage;
 import net.minecraft.client.gui.options.data.OptionsPages;
 import net.minecraft.core.block.Blocks;
@@ -19,7 +20,9 @@ public class StepItUpGameSettings {
 		hasInit = true;
 
 		OptionsPage StepItUp = OptionsPages.register(new OptionsPage("stepitup.options.title", Blocks.STAIRS_BRICK_DIAMOND.getDefaultStack()))
-			.withComponent(new BooleanOptionComponent(StepItUpGameSettingsHolder.ENABLED));
+			.withComponent(new KeyBindingComponent(StepItUpGameSettingsHolder.TOGGLE))
+			.withComponent(new BooleanOptionComponent(StepItUpGameSettingsHolder.ENABLED))
+		;
 		OptionsPages.register(StepItUp);
 
 	}
