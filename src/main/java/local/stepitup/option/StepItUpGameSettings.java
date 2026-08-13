@@ -1,4 +1,4 @@
-package local.stepitup.options;
+package local.stepitup.option;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

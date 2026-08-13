@@ -1,6 +1,6 @@
 package local.stepitup.mixin.entity;
 
-import local.stepitup.options.StepItUpGameSettingsHolder;
+import local.stepitup.option.StepItUpGameSettingsHolder;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;

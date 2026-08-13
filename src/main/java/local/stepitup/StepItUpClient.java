@@ -1,6 +1,6 @@
 package local.stepitup;
 
-import local.stepitup.options.StepItUpGameSettings;
+import local.stepitup.option.StepItUpGameSettings;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
