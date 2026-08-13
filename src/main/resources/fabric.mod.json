@@ -19,6 +19,9 @@
 	"entrypoints": {
 		"main": [
 			"local.stepitup.StepItUp"
+		],
+		"client" : [
+			"local.stepitup.StepItUpClient"
 		]
 	},
 	"mixins": [
